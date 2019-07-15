@@ -16,6 +16,28 @@
       //2
       para.textContent="Hello Javascript!";
       document.body.appendChild(para);
+      //3
+      var content = para.innerHTML;
+      para.innerHTML=`I love <strong>Javascript</strong>`;
+      document.body.appendChild(para);
+      //4
+      var list = document.createElement("ul");
+      document.body.appendChild(list);
+      var uli = document.createElement("li");
+      uli.innerText="Buy groceries";
+      var uli1 = document.createElement("li");
+      uli1.innerText="Feed the cat";
+      var uli2 = document.createElement("li");
+      uli2.innerText="Do laundry";
+      list.appendChild(uli);
+      list.appendChild(uli1);
+      list.appendChild(uli2);
+      //5
+      var ul3 = document.createElement("li");
+      ul3.innerText="empty";
+      list.appendChild(ul3);
+      //6
+      list.removeChild(ul3);
 
     </script>
   </body>
