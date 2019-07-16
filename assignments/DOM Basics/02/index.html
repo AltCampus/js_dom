@@ -60,7 +60,14 @@
         doc[i].style.border = `1px solid blue`;
       }
       //4
+      var colo = (document.querySelector(
+        "#demo-query"
+      ).style.border = `1px solid grey`);
       //5
+      var docu = document.querySelectorAll(".demo-query-all");
+      for (let i = 0; i < docu.length; i++) {
+        docu[i].style.border = `1px solid green`;
+      }
     </script>
   </body>
 </html>
