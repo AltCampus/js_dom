@@ -45,7 +45,10 @@
     var disp = document.querySelectorAll("li");
     disp.forEach(n => (n.style.background = "red"));
     //3
-
+    var disp = document.querySelectorAll("li");
+    for (let i = 0; i < disp.length; i++) {
+      disp[disp.length - 1].style.background = "pink";
+    }
     //4
     //5
   </script>
