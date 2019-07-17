@@ -15,6 +15,16 @@
   </body>
   <script>
     //mycode
+    //1
     document.body.style.fontFamily = "Arial, sans-serif";
+    //2
+    document.getElementById("nickname").textContent = "Abhinav";
+    document.getElementById("favorites").textContent = "Trekking,Reading";
+    document.getElementById("hometown").textContent = "Lucknow";
+    //3
+    document.querySelectorAll("li").className = "listitem";
+    var list1 = document.querySelectorAll("li");
+    list1.forEach(n => (n.style.color = "red"));
+    //4
   </script>
 </html>
