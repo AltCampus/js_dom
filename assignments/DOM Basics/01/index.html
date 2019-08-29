@@ -11,6 +11,30 @@
       <h1>Document Object Model</h1>
     <script>
       // your code goes here
+      var para = document.createElement("p");
+      para.textContent = 'Hello Javascript!';
+      para.innerHTML = `I love <strong>Javascript</strong>`; 
+      document.body.appendChild(para);
+
+      var ul = document.createElement("ul");
+      var li = ["Buy groceries", "Feed the cat", "Do laundry"];
+
+      for (i=0; i < li.length; i++){
+
+        var li1 = document.createElement("li");
+
+        li1.innerHTML = li[i];
+        ul.appendChild(li1);
+      }
+      
+      document.body.appendChild(ul);
+
+      var newLi = document.createElement("li");
+      newLi.innerHTML = "Potatoes";
+
+      ul.appendChild(newLi);
+
+      ul.children[2].remove();
     </script>
   </body>
 </html>

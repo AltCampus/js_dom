@@ -3,7 +3,6 @@ var quotes;
 // Write your code here
 
 
-
 quotes = [
     {
         "quoteAuthor": "Thomas Edison",
@@ -314,3 +313,11 @@ quotes = [
         "quoteText": "Great talent finds happiness in execution."
     }
 ];
+
+function newQuote () {
+
+    var randomQuote = Math.floor((Math.random() * quotes.length));
+    document.getElementById("quotedisplay").innerHTML = quotes[randomQuote].quoteText;
+    document.getElementById("quoteauthor").innerHTML = quotes[randomQuote].quoteAuthor;
+}
+document.getElementById("clicked").addEventListener("click", newQuote);
