@@ -11,6 +11,42 @@
       <h1>Document Object Model</h1>
     <script>
       // your code goes here
+      let  p = document.createElement('p');
+      p.textContent = "Hello Javascript!" 
+      p.innerText = "I love <strong>Javascript </strong>";
+      document.body.append(p);
+
+      //create ul tag
+      /*<ul>
+      <li>Buy groceries</li>
+      <li>Feed the cat</li>
+      <li>Do laundry</li>
+      </ul>*/
+      let ul = document.createElement('ul');
+      document.body.append(ul);
+      p.insertAdjacentHTML('afterend',' <ul></ul>');
+      //1st li
+      li1 =document.createElement('li');
+      li1.textContent = "Buy groceries";
+      ul.append(li1);
+      //2nd li
+      li2 =document.createElement('li');
+      li2.textContent = "Feed the cat";
+      ul.append(li2);
+      //3rd li
+      li3 =document.createElement('li');
+      li3.textContent = "Do laundry";
+      ul.append(li3);
+      //4th li
+      li4 = document.createElement('li');
+      li4.textContent = "new li";
+      ul.appendChild(li4);
+
+      //remove the 4th li
+      // ul.removeChild(li4);
+      li4.remove();
+      
+
     </script>
   </body>
 </html>

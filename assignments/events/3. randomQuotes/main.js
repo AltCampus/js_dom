@@ -2,6 +2,19 @@ var quotes;
 
 // Write your code here
 
+//target
+const change = document.querySelector("body");
+
+//callback function
+function quoteMaker(){
+  let quotereturn = document.body;
+    quotereturn.textContent = quotePicker();
+
+    return quotereturn;
+}
+
+function quotePicker(){
+
 
 
 quotes = [
@@ -314,3 +327,16 @@ quotes = [
         "quoteText": "Great talent finds happiness in execution."
     }
 ];
+
+
+
+
+let index =  Math.floor(Math.random()*(quotes.length-1));
+
+    return quotes[index].quoteAuthor +':'+ quotes[index].quoteText;
+
+}
+
+
+//adding event
+change.addEventListener('keydown',quoteMaker);

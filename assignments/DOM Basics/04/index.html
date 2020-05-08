@@ -12,5 +12,28 @@
       <li>Favorites: <span id="favorites"></span></li>
       <li>Hometown: <span id="hometown"></span></li>
     </ul>
+    <!--1.Add a script tag to the bottom.-->
+    <script>
+      //change body style font-family to 'Arail','sans-serif'
+      document.body.style.fontFamily="Arial","sans-serif";
+      //replace spans
+      document.querySelector('#nickname').innerText = "Sudhanshu";
+      document.querySelector('#favorites').innerText = "Sports";
+      document.querySelector('#hometown').innerText = "Rourkela";
+
+      //change the class to 'listitem'
+      var li = document.querySelectorAll('li').forEach(elem => elem.className = "listitem");
+
+      //Add a style tag that sets a rule for "listitem" to make the color red
+      var style = document.createElement("style");
+      style.innerHTML = ".listitem {color:red}";
+      document.body.append(style);
+
+      //Create a new img element and set its src attribute to a picture of you. Append that element to the page
+      var image = document.createElement("img");
+      image.src = "https://avatars2.githubusercontent.com/u/37769721?s=460&v=4";
+      document.body.append(image);
+
+    </script>
   </body>
 </html>

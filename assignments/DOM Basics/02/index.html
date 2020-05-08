@@ -47,6 +47,21 @@
     <div class="demo-query-all">Access me by query all (2)</div>
     <script>
       // your code goes here
+      //1
+      let demoId = document.querySelector("#demo");
+      demoId.style.border = "1px solid purple";
+      //2
+      let demoClass = document.querySelectorAll(".demo");
+      demoClass.forEach(elem => elem.style.border = "1px solid orange");
+      //3
+      let articleByTagName = document.querySelectorAll("article");
+      articleByTagName.forEach(elem => elem.style.border = "1px solid blue");
+      //4
+      let demoQuery = document.querySelector("#demo-query");
+      demoQuery.style.border = "1px solid grey";
+      //5
+      let demoQueryAll = document.querySelectorAll(".demo-query-all");
+      demoQueryAll.forEach(elem => elem.style.border = "1px solid green");
     </script>
   </body>
 </html>
